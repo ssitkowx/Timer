@@ -23,7 +23,7 @@ class Timer
             eTim17,
         };
 
-        Timer () = default;
+        Timer          () = default;
         virtual ~Timer () = default;
 
         virtual void     Start      (void)               = 0;
