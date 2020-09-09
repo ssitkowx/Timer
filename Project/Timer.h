@@ -15,12 +15,12 @@ class Timer
     public:
         enum class ETimer : uint8_t
         {
-            eTim0,
-            eTim1,
-            eTim7,
-            eTim14,
-            eTim16,
-            eTim17,
+            e0,
+            e1,
+            e7,
+            e14,
+            e16,
+            e17,
         };
 
         Timer          () = default;
