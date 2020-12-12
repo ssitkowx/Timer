@@ -33,13 +33,14 @@ class Timer
         void Stop     (void) { derivedType.Stop     (); }
         void StartIsr (void) { derivedType.StartIsr (); }
         void StopIsr  (void) { derivedType.StopIsr  (); }
-        void Reset    (void)
+
+        constexpr void Reset    (void)
         {
             Stop ();
             Start ();
         }
 
-        void ResetIsr   (void)
+        constexpr void ResetIsr   (void)
         {
             StopIsr ();
             StartIsr ();
