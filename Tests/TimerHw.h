@@ -11,7 +11,7 @@
 /////////////////////////// CLASSES/STRUCTURES ////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-class TimerMock final : public Timer <TimerMock>
+class TimerHw final : public Timer <TimerHw>
 {
     public:
 	    struct Config
@@ -21,8 +21,8 @@ class TimerMock final : public Timer <TimerMock>
 		    ETimer eTimer;
 	    };
 
-		TimerMock (const Config v_config) { }
-        ~TimerMock () = default;
+		TimerHw (const Config v_config) { }
+        ~TimerHw () = default;
 		
 		MOCK_METHOD0 (Start     , void (void));
 		MOCK_METHOD0 (Stop      , void (void));
