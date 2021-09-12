@@ -31,8 +31,12 @@
 *.out
 *.app
 /trunk/build
-/trunk/conan/conaninfo.txt
-/trunk/conan/conanbuildinfo.cmake
-/trunk/conan/conanbuildinfo.gcc
-/trunk/conan/conanbuildinfo.txt
+Conan/conaninfo.txt
+Conan/conanbuildinfo.cmake
+Conan/conanbuildinfo.gcc
+Conan/conanbuildinfo.txt
+Conan/conan.lock
+Conan/graph_info.json
+Conan/packagesProperties.txt
 /build
+/Build
