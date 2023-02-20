@@ -4,7 +4,7 @@ import os
 
 class Conan(ConanFile):
     name            = "Timer"
-    version         = "1.0"
+    version         = "1.1"
     user            = "ssitkowx"
     channel         = "stable"
     license         = "freeware"
