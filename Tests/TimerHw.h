@@ -14,27 +14,27 @@
 class TimerHw final : public Timer <TimerHw>
 {
     public:
-	    struct Config
-	    {
-		    double Divider;
-		    double InterruptInSec;
-		    ETimer eTimer;
-	    };
+        struct Config
+        {
+            double Divider;
+            double InterruptInSec;
+            ETimer eTimer;
+        };
 
-		TimerHw (const Config v_config) { }
+        TimerHw (const Config v_config) { }
         ~TimerHw () = default;
-		
-		MOCK_METHOD0 (Start     , void (void));
-		MOCK_METHOD0 (Stop      , void (void));
-		MOCK_METHOD0 (StartIsr  , void (void));
-		MOCK_METHOD0 (StopIsr   , void (void));
-		MOCK_METHOD1 (SetCounter, void (uint32_t v_counter));
-		MOCK_METHOD0 (GetCounter, void (void));	
-		MOCK_METHOD0 (init      , void (void));
-		MOCK_METHOD0 (deInit    , void (void));
 
-	private:
-	    const Config config;
+        MOCK_METHOD0 (Start     , void (void));
+        MOCK_METHOD0 (Stop      , void (void));
+        MOCK_METHOD0 (StartIsr  , void (void));
+        MOCK_METHOD0 (StopIsr   , void (void));
+        MOCK_METHOD1 (SetCounter, void (uint32_t v_counter));
+        MOCK_METHOD0 (GetCounter, void (void));	
+        MOCK_METHOD0 (init      , void (void));
+        MOCK_METHOD0 (deInit    , void (void));
+
+    private:
+        const Config config;
 };
 
 ///////////////////////////////////////////////////////////////////////////////
